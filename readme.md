@@ -28,6 +28,24 @@ DB_KEY_FIELD=id
 DB_VALUE_FIELD=value
 ```
 
+## Deploying Locally
+To test the endpoint locally, add a `.env` file to the root directory. Run [PSQL](https://www.postgresql.org/download/) locally or via Heroku.
+* Ensure python3 is installed and run `pip3 install requirements.txt`.
+  * virtualenv should be used if possible.
+* Create the necessary PQSL database and update the `.env` with the connection string.
+  * Create the necessary [table](#postgres-db).
+    * `python3 ./deploy/db_init.py` can also be used to create the base table.
+  * Load the necessary [data](#importing-data-to-postgres).
+* run gunicorn `gunicorn -b 0.0.0.0:8000 braze-lookup:api`
+* [Postman](https://www.postman.com/downloads/) or curl can be used to test the endpoint
+
+### Curl Example
+```
+curl --location --request GET 'localhost:8000/lookup?id=value5' \
+--header 'Authorization: Bearer YWJjO#123jE_yMw'
+```
+
+
 ## Example Usage
 To use the webhook with [Braze connected content](https://www.braze.com/docs/user_guide/personalization_and_dynamic_content/connected_content/), make a connected content get call with the following:
 
