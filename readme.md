@@ -59,8 +59,8 @@ If the record is found, then a json object with the `[DB_KEY_FIELD]` and `[DB_VA
 
 ```
 {
-  "[DB_KEY_FIELD]"=>"{key}",
-  "[DB_VALUE_FIELD]"=>"{value}"
+  "[DB_KEY_FIELD]": "{key}",
+  "[DB_VALUE_FIELD]": "{value}"
 }
 ```
 
@@ -93,7 +93,7 @@ Example:
 
 Should output `nyc`
 
-**To convert to a number, using liquid assign with the `plus` filter ie {% assign resp_num = resp_json.num | plus: 0 %}**
+**To convert to a number, using liquid assign with the `plus` filter ie `{% assign resp_num = resp_json.num | plus: 0 %}`**
 
 ## Heroku
 [Heroku](https://dashboard.heroku.com/) can be use to host the webhook.
