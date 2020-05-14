@@ -1,0 +1,17 @@
+﻿id,value
+json1,"{""offer"":""marketing"",""location"":""ny""}"
+json2,"{""offer"":""newsletter"",""location"":""nj""}"
+json3,"{""offer"":""promo"",""location"":""mi""}"
+json4,"{""offer"":""marketing"",""location"":""ny""}"
+json5,"{""offer"":""promo"",""location"":""fl""}"
+json6,"{""offer"":""newsletter"",""location"":""nj""}"
+json7,"{""offer"":""newsletter"",""location"":""ca""}"
+json8,"{""offer"":""promo"",""location"":""wa""}"
+json9,"{""offer"":""marketing"",""location"":""ny""}"
+json10,"{""offer"":""newsletter"",""location"":""nj""}"
+string1,Special Offer for you
+string2,Exclusive Promotion
+string3,Limited Time Only!
+list1,"marketing,promo,newsletter"
+list2,"ny,nj,fl"
+list3,"shirts,shoes,pants"

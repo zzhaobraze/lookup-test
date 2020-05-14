@@ -1,0 +1,7 @@
+[lookup]
+AUTHENTICATION=Bearer ABC!12333
+DATABASE_URL=postgres://[username]:[password]@[localhost]:[5432]/[database]
+DB_SCHEMA=public
+DB_TABLE=bz_lookup
+DB_KEY_FIELD=id
+DB_VALUE_FIELD=value
