@@ -17,6 +17,7 @@
 			- [Endpoint](#endpoint)
 			- [Postgres DB](#postgres-db)
 	- [Importing data to Postgres](#importing-data-to-postgres)
+	- [Sample CSV](#sample-csv)
 
 <!-- /TOC -->
 
@@ -195,4 +196,5 @@ Or using [pgadmin](https://www.pgadmin.org/)
 
 **Enable headers, and if importing from excel csv, Delimiter `,` with escape `"` or data may not be loaded correctly.**
 
+## Sample CSV
 See [example data](example_data.csv) for a data example.
