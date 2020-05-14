@@ -1,4 +1,25 @@
 # Growth Shares Connected Content Lookup
+<!-- TOC depthFrom:1 depthTo:6 withLinks:1 updateOnSave:1 orderedList:0 -->
+
+- [Growth Shares Connected Content Lookup](#growth-shares-connected-content-lookup)
+	- [Summary](#summary)
+	- [Configuration settings](#configuration-settings)
+		- [Local configuration Example](#local-configuration-example)
+	- [Deploying Locally](#deploying-locally)
+		- [Curl Example](#curl-example)
+	- [Example Usage](#example-usage)
+		- [Result](#result)
+	- [Heroku](#heroku)
+		- [Deploying to Heroku](#deploying-to-heroku)
+		- [Heroku Deplooy](#heroku-deplooy)
+			- [App name](#app-name)
+			- [Environment Variables](#environment-variables)
+			- [Endpoint](#endpoint)
+			- [Postgres DB](#postgres-db)
+	- [Importing data to Postgres](#importing-data-to-postgres)
+
+<!-- /TOC -->
+
 ## Summary
 This is a basic python3 script using the [Falcon framework](https://falconframework.org/) to host a webhook endpoint for use with [Braze connected content](https://www.braze.com/docs/user_guide/personalization_and_dynamic_content/connected_content/).  The webhook will take `lookup key` and return a json to be used. See [example usage](#example-usage) for more details.
 
