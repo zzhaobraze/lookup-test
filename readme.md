@@ -51,13 +51,14 @@ DB_VALUE_FIELD=value
 ```
 
 ## Deploying Locally
-To test the endpoint locally, add a `.env` file to the root directory. Run [PSQL](https://www.postgresql.org/download/) locally or via Heroku.
+To test the endpoint locally, add a `.env` file to the root directory. See [env_example](env_example). Use [PSQL](https://www.postgresql.org/download/) locally or via Heroku.
 * Ensure python3 is installed and run `pip3 install requirements.txt`.
   * virtualenv should be used if possible.
-* Create the necessary PQSL database and update the `.env` with the connection string.
-  * Create the necessary [table](#postgres-db).
-    * `python3 ./deploy/db_init.py` can also be used to create the base table.
-  * Load the necessary [data](#importing-data-to-postgres).
+* Create the necessary PQSL connection, user and database
+* Update the `.env` with the connection string.
+* Create the necessary [table](#postgres-db).
+  * `python3 ./deploy/db_init.py` can also be used to create the base table.
+* Load the necessary [data](#importing-data-to-postgres).
 * run gunicorn `gunicorn -b 0.0.0.0:8000 braze-lookup:api`
 * [Postman](https://www.postman.com/downloads/) or curl can be used to test the endpoint
 
