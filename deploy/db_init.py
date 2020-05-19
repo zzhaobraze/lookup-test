@@ -57,6 +57,19 @@ try:
     db_cursor = db_conn.cursor()
     db_cursor.execute(db_create)
     db_conn.commit()
+
+    db_index = sql.SQL("""
+            CREATE UNIQUE INDEX bz_lookup_index
+            ON {schema}.{table} ({field_key});
+        """).format(
+        field_key=sql.Identifier(settings['DB_KEY_FIELD']),
+        schema=sql.Identifier(settings['DB_SCHEMA']),
+        table=sql.Identifier(settings['DB_TABLE'])
+    )
+
+    db_cursor.execute(db_index)
+    db_conn.commit()
+
     print("Table %s.%s successfully created." % (settings['DB_SCHEMA'], settings['DB_TABLE']))
 except Exception as e:
     print(str(e))
