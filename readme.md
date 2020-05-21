@@ -181,6 +181,9 @@ CREATE TABLE [DB_SCHEMA].[DB_TABLE] (
 )
 ```
 
+## Lookup Admin Tool
+Adding and editing data in the lookup table can be done using the simple admin tool that can be found here [Braze Data Lookup Admin](https://github.com/zzhaobraze/lookup-admin) or manually using Postgres CLI or PGAdmin.
+
 ## Importing data to Postgres
 Data import can be done via the Postgres CLI Copy
 ```
