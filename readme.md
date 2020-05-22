@@ -202,3 +202,17 @@ Or using [pgadmin](https://www.pgadmin.org/)
 
 ## Sample CSV
 See [example data](example_data.csv) for a data example.
+
+## Benchmarking
+See [example data](benchmark/)
+
+### Sample Results
+Sample local run with 20 workers, 50 threads and a sample size of 1000 gave an average response time of `341.700998ms` without caching.
+
+Sample local run with 1000 workers, 100 threads and a sample size of 10000 gave an average response time of `1589.971138ms` without caching.
+
+```
+status,total duration(s), total counts, average response(ms)
+200,7376.066533,9999,737.680421
+```
+

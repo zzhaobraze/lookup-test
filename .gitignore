@@ -6,3 +6,6 @@ db.sqlite3
 getting-started/*
 .brazelookup
 __pycache__
+benchmark/*.csv
+*.csv
+!example_data.csv
